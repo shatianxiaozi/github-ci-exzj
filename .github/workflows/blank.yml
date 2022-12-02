@@ -35,7 +35,7 @@ jobs:
         uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
         with:
           username: "zhangjian0223"
-          password: "sin@13438181141"
+          password:  ${{ secrets.DOCKER_PASSWORD }}
       
       # Runs a set of commands using the runners shell
       - name: Push to Docker Registry
